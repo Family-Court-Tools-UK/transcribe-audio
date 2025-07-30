@@ -2,6 +2,10 @@
 
 This document will guide you through setting up a Python virtual environment for speech recognition, installing necessary libraries, running a transcription command, and managing your Python installation.
 
+NOTE: This uses free software, it runs on your local machine, and none of your data is transferred anywhere else.
+
+It will start at the top level of a folder and work down all levels until all files are processed.
+
 ## 1. Creating and Activating a Python Virtual Environment
 
 It's good practice to use a virtual environment for your Python projects. This keeps your project dependencies separate from other Python projects and your system-wide Python installation.
