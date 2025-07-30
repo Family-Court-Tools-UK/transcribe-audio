@@ -1,12 +1,17 @@
 # Getting Started with Speech Recognition in Python
 
 This document will guide you through setting up a Python virtual environment for speech recognition, installing necessary libraries, running a transcription command, and managing your Python installation.
+The script will start at the top level of a folder and work down all levels until all files are processed.
 
 NOTE: This uses free software, it runs on your local machine, and none of your data is transferred anywhere else.
 
-It will start at the top level of a folder and work down all levels until all files are processed.
+**WARNING!** The script was largely written by Google Gemini. It works well for me, but I take no responsibility if anything goes wrong. 
+Always take a look at anything you download and run to check it's not doing anything nefarious.
+
 
 ## 1. Creating and Activating a Python Virtual Environment
+
+If you've not got Python installed, there's instructions at the end of this document.
 
 It's good practice to use a virtual environment for your Python projects. This keeps your project dependencies separate from other Python projects and your system-wide Python installation.
 
@@ -54,7 +59,12 @@ You might need to download specific Python scripts from GitHub. Here's how to do
 
     For example, if you wanted to download a script from `https://raw.githubusercontent.com/Family-Court-Tools-UK/transcribe-audio/refs/heads/main/whisper_transcribe.py`, you would visit that URL and save the content as `whisper_transcribe.py` in your project directory.
 
-2.  **Run the downloaded Python file:**
+    Or, if you are using Windows Powershell, you could do this:
+
+    `Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Family-Court-Tools-UK/transcribe-audio/refs/heads/main/whisper_transcribe.py" -OutFile "whisper_transcribe.py"`
+
+
+3.  **Run the downloaded Python file:**
     Make sure you are in the directory where you saved `whisper_transcribe.py` and your `speechrec` virtual environment is active.
     ```bash
     python .\whisper_transcribe.py
